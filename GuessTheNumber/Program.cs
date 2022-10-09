@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Random random = new Random();
-            int random_num = random.Next(1, 50); //Generate number 1-50
+            int random_num = random.Next(1, 51); //Generate number 1-50
             int tries = 0;
 
             while (true)
