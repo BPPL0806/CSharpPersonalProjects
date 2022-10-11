@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Random random = new Random();
-            int random_num = random.Next(1, 51); //Generate number 1-50
+            int random_num = random.Next(1, 50); //Generate number 1-50
             int tries = 0;
 
             while (true)
@@ -20,6 +20,8 @@
                     {
                         Console.WriteLine("Correct answer! It's " + random_num);
                         Console.WriteLine("You guessed it at 1st try!");
+                        Console.WriteLine("Press any key to exit...");
+                        Console.ReadKey();
                         break;
                     }
 
@@ -38,9 +40,10 @@
                     if (answer == random_num)
                     {
                         Console.WriteLine("Correct answer! It's " + random_num + ".");
-                        Console.WriteLine("You guessed number at " + tries + " tries.");
-                        break;
-                    }
+                        Console.WriteLine("You guessed the number at " + tries + " tries.");
+                        Console.WriteLine("Press any key to exit...");
+                        Console.ReadKey();
+                    }   break;
                 }
 
                 catch (Exception) //Error handling

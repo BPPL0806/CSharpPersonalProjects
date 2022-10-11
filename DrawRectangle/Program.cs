@@ -70,7 +70,9 @@
                 Console.WriteLine();
             }
 
-            Console.WriteLine(" \n *If shape isn't displayed correctly, put program into fullscreen.");
+            Console.WriteLine(" \n *If shape isn't displayed correctly, put program into fullscreen \n mode or use smaller size.\n");
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
